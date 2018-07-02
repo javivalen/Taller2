@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Usuarios</title>
+	<meta charset="utf-8">
+	{% load staticfiles %}
+	<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+	<style type="text/css">
+		.jumbotron {
+		 	margin: 30px;
+		}
+	</style>
+	<style>
+body {
+    background-color: skyblue;
+    text-align: center;
+    /*background-image: url(https://png.pngtree.com/element_origin_min_pic/17/04/15/64c96b851777b39fcb064a5f88da0ac2.jpg);*/
+}
+
+h2 {
+    color: white;
+    text-align: left;
+}
+h1 {
+    color: black;
+    text-align: center;
+}
+
+h3 {
+    color: black;
+    text-align: left;
+}
+
+
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
+</style>
+</head>
+<body>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="jumbotron">
+				<h1>{{titulo}}</h1>
+			</div>
+		</div>
+	</div>
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="../">Inicio</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="../cursos/">Cursos</a>
+      <a class="nav-item nav-link" href="../user/">Usuarios</a>
+    </div>
+  </div>
+</nav>
+
+
+</div>
+</body>
+</html>
